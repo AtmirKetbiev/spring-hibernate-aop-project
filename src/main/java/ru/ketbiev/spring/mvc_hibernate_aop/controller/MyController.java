@@ -57,4 +57,12 @@ public class MyController {
 
         return "redirect:/";
     }
+
+    @RequestMapping("/deleteEmployeeForTest")
+    public String deleteEmployeeForTest(@RequestParam("empId") int id, Model model) {
+
+        employeeService.deleteEmployee(id);
+
+        return "redirect:/";
+    }
 }
