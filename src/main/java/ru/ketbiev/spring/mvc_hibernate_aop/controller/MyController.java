@@ -59,7 +59,7 @@ public class MyController {
     }
 
     @RequestMapping("/deleteEmployeeForTest")
-    public String deleteEmployeeForTest(@RequestParam("empId") int id, Model model) {
+    public String deleteEmployeeForTest2(@RequestParam("empId") int id, Model model) {
 
         employeeService.deleteEmployee(id);
 
